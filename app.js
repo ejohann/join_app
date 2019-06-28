@@ -20,7 +20,8 @@ app.get("/", function(req, res){
 		   {
 		      	var users = results[0].count;
 		      	  //respond with the users count
-	            res.send("We have " + users + " users in our DB");
+	           // res.send("We have " + users + " users in our DB");
+	           res.render("home");
 		   }
 	});
    connection.end();
