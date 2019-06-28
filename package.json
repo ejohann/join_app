@@ -1,0 +1,24 @@
+{
+  "name": "join",
+  "version": "1.0.0",
+  "description": "\"# join_app\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejohann/join_app.git"
+  },
+  "author": "Hanne Digital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejohann/join_app/issues"
+  },
+  "homepage": "https://github.com/ejohann/join_app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "mysql": "^2.17.1"
+  }
+}
