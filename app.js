@@ -16,7 +16,7 @@ app.get("/", function(req, res){
 	connection.query(q, function(error, results){
 		if(error)
 			{
-				console.log("There was an error in query");
+				throw error;
 			}
 		  else
 		   {
@@ -31,8 +31,23 @@ app.get("/", function(req, res){
 
 
 app.post("/register", function(req, res){
-	var email = req.body.email;
-   console.log("Post request to register a user.  The email is " + email);
+	var user_email = req.body.email;
+
+	var person ={
+        email: user_email
+	};
+
+	var end_result = connection.query('INSERT INTO users SET ?', person, function(error, results){
+		if(error)
+		 {
+		 	throw error;
+		 }
+		 else
+		 {
+		 	console.log(results);
+		 }
+	});
+  // console.log("Post request to register a user.  The email is " + email);
 });
 
 
