@@ -44,7 +44,7 @@ app.post("/register", function(req, res){
 		 }
 		 else
 		 {
-		 	console.log(results);
+		 	res.redirect("/");
 		 }
 	});
   // console.log("Post request to register a user.  The email is " + email);
