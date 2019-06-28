@@ -1,0 +1,10 @@
+// change to actual database information
+
+
+module.exports.databaseOptions = {
+  host     : '*****',
+  database : '*****',
+  user     : '****',
+  password : '****',
+  port     : '****'
+};
