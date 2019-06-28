@@ -5,4 +5,5 @@ body{
       color: rgb(66,69,86);
       background-image: url('http://i.imgur.com/BJP2Q1j.jpg');
       background-size: cover;
+      font-weight: 100;
 }
