@@ -5,6 +5,7 @@ var app = express();
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(__dirname + "/public"));
 
 var config = require('./config.js');
 var connection = mysql.createConnection(config.databaseOptions);
