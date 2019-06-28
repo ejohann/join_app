@@ -3,7 +3,7 @@ var app = express();
 
 
 app.get("/", function(req, res){
-	console.log("Someone requested us!");
+	res.send("You have reached our homepage!");
 });
 
 app.listen(8080, function(){
