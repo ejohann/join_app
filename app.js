@@ -21,6 +21,7 @@ app.get("/", function(req, res){
 	            res.send("We have " + users + " users in our DB");
 		   }
 	});
+   connection.end();
 });
 
 app.get("/joke", function(req, res){
