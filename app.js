@@ -24,7 +24,7 @@ app.get("/", function(req, res){
 	           res.render("home", {data: users});
 		   }
 	});
-   connection.end();
+   // connection.end();
 });
 
 app.get("/joke", function(req, res){
