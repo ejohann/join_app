@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+var config = require('./config.js');
+var connection = mysql.createConnection(config.databaseOptions);
+
 
 app.get("/", function(req, res){
 	res.send("You have reached our homepage!");
