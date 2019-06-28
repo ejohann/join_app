@@ -11,6 +11,11 @@ app.get("/joke", function(req, res){
   	res.send(joke);
 });
 
+app.get("/random_number", function(req, res){
+    var x = Math.floor(Math.random() * 10 + 1);
+  	res.send("Your lucky number is: " + x);
+});
+
 app.listen(8080, function(){
 	console.log("Server running on 8080!");
 });
