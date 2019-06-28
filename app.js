@@ -7,7 +7,12 @@ var connection = mysql.createConnection(config.databaseOptions);
 
 
 app.get("/", function(req, res){
-	res.send("You have reached our homepage!");
+
+	// Get count of users in database
+    var users = 0;
+    
+    //respond with the users count
+	res.send("We have " + users + " users in our DB");
 });
 
 app.get("/joke", function(req, res){
