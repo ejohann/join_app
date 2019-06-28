@@ -21,7 +21,7 @@ app.get("/", function(req, res){
 		      	var users = results[0].count;
 		      	  //respond with the users count
 	           // res.send("We have " + users + " users in our DB");
-	           res.render("home", {data: users});
+	           res.render("home", {users: users});
 		   }
 	});
    // connection.end();
