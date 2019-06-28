@@ -19,3 +19,19 @@ p {
   margin: 0;
   font-size: 35px;
 }
+
+.form {
+	line-height: 1.5;
+	border: none;
+	border-bottom: 3px solid #ebebeb;
+	margin-top: 100px;
+	width: 700px;
+	font-size: 2.9em;
+	color: white;
+	padding: 5px 10px;
+	background: transparent;
+}
+
+input[type=email]:focus {
+  outline: none;
+}
