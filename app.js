@@ -31,7 +31,8 @@ app.get("/", function(req, res){
 
 
 app.post("/register", function(req, res){
-   console.log("Post request to register a user.  The email is " + req.body.email);
+	var email = req.body.email;
+   console.log("Post request to register a user.  The email is " + email);
 });
 
 
