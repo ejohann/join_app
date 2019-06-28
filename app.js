@@ -7,12 +7,20 @@ var connection = mysql.createConnection(config.databaseOptions);
 
 
 app.get("/", function(req, res){
-
 	// Get count of users in database
-    var users = 0;
-    
-    //respond with the users count
-	res.send("We have " + users + " users in our DB");
+	var q = "SELECT COUNT(*) AS count FROM users";
+	connection.query(q, function(error, results){
+		if(error)
+			{
+				console.log("There was an error in query");
+			}
+		  else
+		   {
+		      	var users = results[0].count;
+		      	  //respond with the users count
+	            res.send("We have " + users + " users in our DB");
+		   }
+	});
 });
 
 app.get("/joke", function(req, res){
