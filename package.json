@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ejohann/join_app#readme",
   "dependencies": {
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "mysql": "^2.17.1"
